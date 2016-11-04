@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Technology Quiz</string>
+
+    <!--Text for preview question [CHAR LIMIT=100] -->
+    <string name="preview_question">What do you know about the current digital video and control standards?</string>
+
+    <!--Text for preview answer [CHAR LIMIT=100] -->
+    <string name="find_out">Find out by taking this short quiz!</string>
+
+    <!--Text for question one [CHAR LIMIT=100] -->
+    <string name="question_one">1) Which of the following are transmission mediums for control signals?</string>
+
+    <!--Text for question two [CHAR LIMIT=100] -->
+    <string name="question_two">2) Which of the following is a protocol used to protect copyrighted material?</string>
+
+    <!--Text for question 3 [CHAR LIMIT=100] -->
+    <string name="question_three">3) EDID is a data structure provided by a digital display to describe its capabilities to a video source.</string>
+
+    <!--Text for question 4 [CHAR LIMIT=100] -->
+    <string name="question_four">4) An HDMI balun is an interface used to convert HDMI to VGA.</string>
+
+    <!--Text for question 5 [CHAR LIMIT=100] -->
+    <string name="question_five">5) What does HDMI stand for?</string>
+</resources>

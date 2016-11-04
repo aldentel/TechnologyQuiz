@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.technologyquiz.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/preview_question"
+            android:textColor="@android:color/black"
+            android:textSize="22sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:text="@string/find_out"
+            android:textColor="@android:color/black"
+            android:textSize="22sp" />
+
+        <TextView
+            style="@style/QuestionStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/question_one" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <CheckBox
+                android:id="@+id/RF"
+                style="@style/CheckboxStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RF" />
+
+            <CheckBox
+                android:id="@+id/IR"
+                style="@style/CheckboxStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IR" />
+
+            <CheckBox
+                android:id="@+id/AC"
+                style="@style/CheckboxStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AC" />
+
+            <CheckBox
+                android:id="@+id/AES"
+                style="@style/CheckboxStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AES" />
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/QuestionStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/question_two" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/ans_2a"
+                style="@style/CheckboxStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SCIN" />
+
+            <RadioButton
+                android:id="@+id/EDID"
+                style="@style/CheckboxStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EDID" />
+
+            <RadioButton
+                android:id="@+id/HDCP"
+                style="@style/CheckboxStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HDCP" />
+
+            <RadioButton
+                android:id="@+id/SPDIF"
+                style="@style/CheckboxStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SPDIF" />
+
+        </RadioGroup>
+
+        <TextView
+            style="@style/QuestionStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/question_three" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:id="@+id/true1"
+                style="@style/CheckboxStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="True" />
+
+            <RadioButton
+                android:id="@+id/false1"
+                style="@style/CheckboxStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="False" />
+
+        </RadioGroup>
+
+        <TextView
+            style="@style/QuestionStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/question_four" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:id="@+id/true2"
+                style="@style/CheckboxStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="True" />
+
+            <RadioButton
+                android:id="@+id/false2"
+                style="@style/CheckboxStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="False" />
+
+        </RadioGroup>
+
+        <TextView
+            style="@style/QuestionStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/question_five" />
+
+        <EditText
+            android:id="@+id/HDMI"
+            style="@style/CheckboxStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Short Answer"
+            android:inputType="textNoSuggestions|textCapWords"
+            android:maxLength="36" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="scoreTotal"
+            android:paddingTop="16dp"
+            android:text="My Score" />
+
+
+    </LinearLayout>
+
+</ScrollView>
